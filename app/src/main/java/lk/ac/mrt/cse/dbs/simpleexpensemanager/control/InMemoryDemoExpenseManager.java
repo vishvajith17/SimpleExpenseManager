@@ -27,12 +27,12 @@ import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.Account;
  */
 public class InMemoryDemoExpenseManager extends ExpenseManager {
 
-    public InMemoryDemoExpenseManager() {
+    public InMemoryDemoExpenseManager(){
         setup();
     }
 
     @Override
-    public void setup() {
+    public void setup(){
         /*** Begin generating dummy data for In-Memory implementation ***/
 
         TransactionDAO inMemoryTransactionDAO = new InMemoryTransactionDAO();
